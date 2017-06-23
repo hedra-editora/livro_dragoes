@@ -1,0 +1,50 @@
+\documentclass[showtrims,12pt]{memoir}
+\usepackage{projeto,hedralogo}
+
+\author{Marcos Maffei}
+\title{Livro dos dragões}
+
+\begin{document}
+\fontsize{12pt}{15.6pt}\selectfont
+
+{\huge\centering\vspace*{6em}\thispagestyle{empty}
+Livro dos dragões\par}
+
+\cleardoublepage
+
+{\huge\centering\vspace*{6em}\thispagestyle{empty}
+Livro dos dragões\\\bigskip
+
+\vfill{\large\ \\%\vspace*{-.8em}
+\normalsize\textit{\ }\\\bigskip
+\large Marcos Maffei\\%\vspace*{-.8em}
+\normalsize\textit{Organização e tradução}\\\vspace*{4em}}
+
+\logoum\\
+{\normalsize\ São Paulo\_\the\year}\par}
+
+\clearpage
+
+\include{CREDITOS}
+
+\clearpage
+
+\setcounter{tocdepth}{0}
+\setcounter{secnumdepth}{-2}
+
+\renewcommand{\contentsname}{Sumário\vspace*{-1em}}
+\tableofcontents*
+
+\clearpage
+
+\pagestyle{estilo}
+\copypagestyle{chapter}{plain}
+
+\part{Livro dos dragões}
+\include{TEXTO}
+
+\include{APENDICE}
+
+\include{COLOFAO}
+
+\end{document}

@@ -1,0 +1,17 @@
+\select@language {brazilian}
+\select@language {brazilian}
+\contentsline {part}{Livro dos drag\IeC {\~o}es}{7}
+\contentsline {chapter}{Perseu e Andr\IeC {\^o}meda\\{\itshape Ov\IeC {\'\i }dio}}{9}
+\contentsline {chapter}{Stan Bolovan\\{\itshape Andrew Lang}}{15}
+\contentsline {chapter}{S\IeC {\~a}o Jorge e o drag\IeC {\~a}o\\{\itshape Jacobus de Voragine e William Caxton}}{29}
+\contentsline {chapter}{A hist\IeC {\'o}ria de Sigurd\\{\itshape Andrew Lang}}{33}
+\contentsline {chapter}{Os salvadores da p\IeC {\'a}tria\\{\itshape Edith Nesbit}}{45}
+\contentsline {chapter}{O drag\IeC {\~a}o relutante\\{\itshape Kenneth Grahame}}{63}
+\contentsline {chapter}{O \IeC {\'u}ltimo drag\IeC {\~a}o\\{\itshape Edith Nesbit}}{93}
+\contentsline {part}{Sobre as hist\IeC {\'o}rias e os autores}{103}
+\contentsline {section}{\IeC {\textquotedblleft }Perseu e Andr\IeC {\^o}meda\IeC {\textquotedblright }}{105}
+\contentsline {section}{\IeC {\textquotedblleft }Stan Bolovan\IeC {\textquotedblright } (de Rumanischen M\IeC {\"a}rchen)}{107}
+\contentsline {section}{\IeC {\textquotedblleft }S\IeC {\~a}o Jorge e o drag\IeC {\~a}o\IeC {\textquotedblright }}{109}
+\contentsline {section}{\IeC {\textquotedblleft }A hist\IeC {\'o}ria de Sigurd\IeC {\textquotedblright }}{111}
+\contentsline {section}{\IeC {\textquotedblleft }Os salvadores da p\IeC {\'a}tria\IeC {\textquotedblright }; \IeC {\textquotedblleft }O \IeC {\'u}ltimo drag\IeC {\~a}o\IeC {\textquotedblright }}{113}
+\contentsline {section}{\IeC {\textquotedblleft }O drag\IeC {\~a}o relutante\IeC {\textquotedblright }}{117}

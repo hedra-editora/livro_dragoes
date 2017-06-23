@@ -1,0 +1,152 @@
+\documentclass[a5,11pt]{hedrabook}
+\usepackage[brazilian]{babel}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[svn,cam,center]{hedracrop}
+\usepackage{hedraextra,hedralogo}
+\usepackage[protrusion=true,expansion]{microtype}
+\usepackage[chapterdot]{hedratoc}
+\usepackage{graphicx,color}
+\usepackage{comment,lipsum}
+\usepackage{kerkis}
+%\usepackage[colorlinks]{hyperref} % cria hyperlinks e realça número da nota.
+%\usepackage{makeidx,hedraindice}  % cria índice
+%\makeindex			   % ...  índice
+
+\usepackage{fltpoint}
+\usepackage{bez123}
+\fpDecimalSign{.}
+\newcounter{bck}
+\newcounter{bcx} \newcounter{bcy}
+\newcounter{bcxmr} \newcounter{bcxpr}
+\newcounter{bcymr} \newcounter{bcypr}
+\newcounter{bcxmk} \newcounter{bcxpk}
+\newcounter{bcymk} \newcounter{bcypk}
+\newcommand{\bigcircle}[3]{ \fpMul{\bck}{0.5522847498}{#3}
+\fpSub{\bcxmr}{#1}{#3} \fpAdd{\bcxpr}{#1}{#3}
+\fpSub{\bcymr}{#2}{#3} \fpAdd{\bcypr}{#2}{#3}
+\fpSub{\bcxmk}{#1}{\bck} \fpAdd{\bcxpk}{#1}{\bck}
+\fpSub{\bcymk}{#2}{\bck} \fpAdd{\bcypk}{#2}{\bck}
+\fpAdd{\bcx}{#1}{0.0} \fpAdd{\bcy}{#2}{0.0}
+\cbezier(\bcxmr,\bcy)(\bcxmr,\bcypk)(\bcxmk,\bcypr)(\bcx,\bcypr)
+\cbezier(\bcx,\bcypr)(\bcxpk,\bcypr)(\bcxpr,\bcypk)(\bcxpr,\bcy)
+\cbezier(\bcxpr,\bcy)(\bcxpr,\bcymk)(\bcxpk,\bcymr)(\bcx,\bcymr)
+\cbezier(\bcx,\bcymr)(\bcxmk,\bcymr)(\bcxmr,\bcymk)(\bcxmr,\bcy)
+}
+
+\newcommand{\circulo}{\begin{center}
+$\bigcircle{0}{0}{75}$
+\end{center}}
+
+
+\begin{document}
+\SVN $Id: DRAGOES.tex 9903 2011-09-29 14:29:44Z oliveira $
+
+% Fazer uma classe para front simples da hedra:
+%     Aprender a criar proporção:
+%\pagestyle{plain}
+\ \\
+\ \\
+\ \\
+\ \\
+{\centering\LARGE\thispagestyle{empty}
+Livro dos dragões
+\par}
+
+\pagebreak
+
+\newcommand{\hedracopy}{\raisebox{-1.2mm}{$^\copyright$}}
+
+\noindent\hedracopy\ Hedra, 2011\\
+\noindent\hedracopy\ Marcos Maffei, 2011
+\bigskip
+
+%Revisão:
+%				\thispagestyle{empty}
+{
+\noindent\begin{minipage}{80mm}\thispagestyle{empty}
+				{\baselineskip=0.7\baselineskip\footnotesize
+				Dados Internacionais de Catalogação  na Publicação (CIP)\\
+                                \vspace{-.3em}
+				\hrule
+				\vspace{1ex} 
+				Maffei, Marcos (Organização e tradução). \textsc{Livro dos dragões}\\
+				-- São Paulo: Hedra, 2011
+				\vspace{1ex}
+				\setlength{\parindent}{3ex}\\
+				\textsc{isbn} 978-85-7715-114-1\\ %Jorge: Corrigi o ISBN, que foi impresso errado.
+                                \vspace{1ex}
+				1. Literatura brasileira I. Novela III. Título\\
+				\vspace{1ex}
+				\noindent   \hspace{\stretch{1}} \textsc{cdd} 028.5
+				\vspace{1ex}\hrule\vspace{1ex}
+				Índice para catálogo sistemático:\\
+				1. Literatura infantil : \quad 028.5\hfill\\ 
+				2. Literatura intanfo-juvenil : \quad 028.5\hfill 
+                                }
+\end{minipage}
+
+\vspace{0.5cm}
+\noindent Capa: Ronaldo Alves\\\EP[2]%
+%Jorge: Aguardar Renan
+%Ilustração de capa: Rosa Marques\\
+Revisão: \\
+\vfil
+
+
+{\footnotesize 
+\noindent Direitos reservados em l\'ingua\\ portuguesa somente para o Brasil\\%
+\ \\
+	\textsc{EDITORA HEDRA LTDA.}\\%
+	R. Fradique Coutinho, 1139 (subsolo)\\
+	05416-011 S\~ao Paulo SP Brasil\\
+	Telefone/Fax (011) 3097-8304\\
+	editora@hedra.com.br\\
+	www.hedra.com.br%
+\ \\
+	Foi feito o dep\'osito legal.
+}
+
+\pagebreak
+\ \\
+\ \\
+\ \\
+\ \\
+{\centering\LARGE\thispagestyle{empty}
+Livro dos dragões
+\par}
+\ \\
+{\centering
+\small Organização e tradução\\ \Large Marcos Maffei
+\par}
+\bigskip
+
+
+{\centering
+%\normalsize ************\\
+%\small\textit{Ilustrações}
+\par}
+\vfill
+
+{\centering
+\hskip-1ex\logoum\\
+{\small
+São Paulo 2011
+\par}}
+
+%\fontsize{11.2pt}{\baselineskip}\selectfont
+%\baselineskip=0.97\baselineskip   % Não passar de 0.9 do \baselineskip
+
+\setcounter{tocdepth}{2}     % amplitude da presença das partes no índice
+\setcounter{secnumdepth}{-2} % amplitude da numeração das partes
+
+%\hedratoc
+
+
+
+\input{TEXTO_1}
+%\input{TEXTO_2}
+\input{APENDICE}
+
+\end{document}
